@@ -1,0 +1,64 @@
+.weatherList {
+    background-color: rgb(216, 244, 244);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+    padding: 20px 150px 20px 150px;    
+  }
+  
+  .cityItem {
+    flex: 0 0 calc(50% - 8px); /* mỗi item chiếm 50% trừ khoảng cách */
+    background: #fff;
+    border: none;
+    padding: 12px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.cityItem:hover{
+  background-color: #efeeee;
+}
+
+  .cityItemLink{
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000000;
+    margin: 0;
+  }
+
+@media (max-width:640px){
+  .weatherList{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0 20px 0;
+  }
+  .cityItem{
+    width: 80%;
+  }
+  .cityItemLink{
+    height: 35px;
+  }
+  .cityItemLink span, .cityItemLink p{
+    margin: 0;
+  }
+  .cityItemLink div{
+    display: flex;
+    gap: 10px;
+  }
+  .cityItemLink div>p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+}
+  

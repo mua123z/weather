@@ -1,0 +1,148 @@
+.SeaHis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.Search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4%;
+    height: 30%;
+    width: 100%;
+    position: relative;
+}
+
+.timkiem{
+    width: 40%;
+    height: 40px;
+    min-width: 350px;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 23px;
+    border: 3px solid rgb(219, 218, 218);
+    padding-left: 35px;
+    color: rgb(0, 0, 0);
+}
+
+.i{
+    left: 30.5%;
+    padding-top: 2px;
+    color: rgb(0, 0, 0);
+}
+
+.history{
+    justify-content: start;
+    
+    /* background-color: antiquewhite; */
+    width: 40%;
+    height: 40%;
+    gap: 10px;
+}
+.Itemhistory{
+    width: 25%;
+    height: 100%;
+    border-radius: 20px;
+    background-color:rgba(0, 0, 0, 0.2);    
+    backdrop-filter: blur(20px);
+    padding: 10px;
+    min-width: 160px;
+}
+.Itemhistory h3 {
+    max-height: 3.6em; /* ~2 dòng nếu line-height 1.2 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+}
+.ItemhistoryImg {
+    width: 60px;
+    height: 60px;
+    overflow: hidden; /* Cắt phần thừa ra ngoài */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ItemhistoryImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Phóng to ảnh để lấp đầy khung */
+    transform: scale(1.4); /* Phóng to nội dung ảnh bên trong */
+}
+
+.suggestionList {
+    width: 40%;
+    min-width: 340px;
+    height: auto;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+    overflow-y: auto;
+}
+
+.suggestionItem {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestionItem:hover {
+    background-color: #e2e2e2;
+}
+
+
+
+@media (max-width:640px) {
+    .i{
+        left: 19%;
+    }
+    .Search{
+        padding: 0;
+        height: 20%;
+    }
+    .textLs{
+        margin: -10px 0 20px 0;
+    }
+    .history{
+        flex-direction: column;
+        align-items: start;
+        width: 350px;
+        height: auto;
+    }
+    .Itemhistory {
+        background: rgba(255, 255, 255, 0.45);
+        backdrop-filter: blur(20px);
+        border-radius: 13px;
+        height: 50px;
+        width: 100%;
+    }
+    .Itemhistory span, .Itemhistory img, .Itemhistory p{
+        display: none;
+    }
+    .suggestionList{
+        top: 60px;
+    }
+}
+
+
+@media (max-width:430px){
+    .i{
+        left: 10%;
+    }
+}
+
+@media (max-width:360px){
+    .i{
+        left: 4%;
+    }
+}

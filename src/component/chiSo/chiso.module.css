@@ -1,0 +1,33 @@
+.luongmua{
+    background-color: rgb(255, 255, 255); /* nền trắng mờ */
+    padding: 4px 8px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.bando{
+    height: 600px;
+    width: 600px;
+}
+
+.ndbando{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:640px){
+    .luongmua{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 370px;
+    }
+    .bando{
+        width: 100%;
+    }
+    .ndbando{
+        width: 100%;
+        height: 320px;
+    }
+}

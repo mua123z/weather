@@ -1,0 +1,41 @@
+.bayngay{
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+}
+.item{
+    border-bottom: 1px solid #797979;
+    padding: 10px;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+}
+.item img{
+    width: 15%;
+}
+
+.item p, .item img{
+    margin: 0;
+}
+.item:hover{
+    background-color: #e4e4e4;
+}
+.mota{
+    width: 30%;
+}
+
+
+@media (max-width:640px){
+    .bayngay{
+        width: 100%;
+        align-items: center;
+    }
+    .mota{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+}

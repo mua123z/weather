@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./page/Home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import WeatherCard from "./component/WeatherCard/WeatherCard.jsx"
+import SeaHis from "./component/SearchHistory/Search-History.jsx";
+import WeatherList from "./component/City/City.jsx";
+import WeatherCardPage from "./component/WeatherCard/WeatherCardPage.jsx";
+import Weather7day from "./component/weather7day/weather7day.jsx";
+import DubaoNgay from "./component/WeatherDay/dubaongay.jsx";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    // <Home/>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>}>
+          <Route index element={
+            <>
+              <SeaHis />
+              <WeatherCard showWeatherDay={false}/> 
+              <WeatherList/>
+            </>
+            } 
+          />
+          <Route path="/weatherCard" element={<WeatherCardPage/>}></Route>
+          
+          <Route path="/dubaongay/:city/:date" element={<DubaoNgay />} />
+
+        </Route>
+      </Routes>
+    </BrowserRouter>
+    
   );
 }
 

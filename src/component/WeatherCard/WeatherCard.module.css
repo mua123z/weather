@@ -1,0 +1,98 @@
+.weatherCard{
+    background-color: rgb(216, 244, 244);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap:20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.weatherCard1{
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 1.5%;
+    box-sizing: border-box;
+}
+
+.itemCity{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 20px;
+    height: 200px;
+    width: 20%;
+}
+
+.itemCityNhietdo{
+    font-size: 80px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.itemCityNhietdoNgay{
+    font-size: 17px;
+}
+
+.chiTiet{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 20px;
+    width: 40%;
+}
+.h2chitiet{
+    height: 95px;
+}
+
+.luongmuabayngay{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    gap: 1%;
+}
+
+.luongmua{
+    width: 53,5%;
+}
+
+.bayngay{
+    width: 35%;
+}
+
+
+@media (max-width:640px) {
+    .weatherCard{
+        padding: 25px 0 0 0;
+    }
+    .weatherCard1{
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .itemCity{
+        width: 80%;
+    }
+    .chiTiet{
+        width: 80%;
+    }
+    .luongmuabayngay{
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    .luongmua{
+        width: 80%;
+        align-items: center;
+    }
+
+    .bayngay{
+        margin:20px 0 20px 0;
+        display: flex;
+        align-items: center;
+        width: 80%;
+    }
+}
+

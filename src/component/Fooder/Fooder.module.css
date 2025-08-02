@@ -1,0 +1,60 @@
+.fooder{
+    height: 430px;
+    background-color: rgb(73, 73, 73);
+    padding: 20px 90px;
+    color: #ffffff;
+}
+
+.ctfooder{
+    width: 100%;
+    gap: 2%;
+}
+
+.introduce{
+    width: 45%;
+}
+
+.product{
+    width: 20%;
+    color: #ffffff;
+}
+.product a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.lienhe{
+    width: 20%;
+}
+.lienhe i{
+    margin-right: 10px;
+}
+
+@media (max-width:640px){
+    .fooder{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        padding: 20px 0 5px 0;
+    }
+    .fooder hr{
+        width: 100%;
+    }
+    .ctfooder{
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        gap: 30px;
+    }
+    .introduce, .product, .address, .lienhe{
+        width: 100%;
+    }
+    .introduce p{
+        margin: 0;
+    }
+    .address iframe{
+        width: 100%;
+    }
+}
