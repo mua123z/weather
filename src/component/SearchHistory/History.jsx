@@ -5,7 +5,7 @@ import ItemHistory from "./ItemHistory";
 function History({ onItemClick }){
     return(
         <>
-            <h2 className={`${style.textLs}`}>Lịch sử gần đây</h2>
+            <h2 className={`${style.textLs}`}>Vị trí gần đây</h2>
             <div className={`${style.history} d-flex`}>
                 {/* <div onClick={onItemClick} className={`${style.historyItem} w-25 h-100 `}> */}
                     <ItemHistory/>

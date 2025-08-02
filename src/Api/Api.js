@@ -1,5 +1,5 @@
 // src/Api/Api.js
-export const API_KEY = "33a7fe3b77ce084b10ead44b90116d89"; // <- API  từ OpenWeatherMap
+export const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 
 const BASE_URL = "https://api.openweathermap.org/data/2.5";
 
